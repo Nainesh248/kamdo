@@ -25,6 +25,7 @@ import com.example.fragment.UserContactUsFragment;
 import com.example.fragment.UserEditProfileFragment;
 import com.example.fragment.UserHomeFragment;
 import com.example.fragment.UserNotificationFragment;
+import com.example.fragment.UserProfileFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import butterknife.BindView;
@@ -52,7 +53,7 @@ public class UserHomeActivity extends AppCompatActivity {
         try {
             ButterKnife.bind(this);
             setupDrawerContent(navView);
-            loadFragment(new UserHomeFragment());
+            loadFragment(new UserProfileFragment());
             ivMenu.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

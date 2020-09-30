@@ -108,6 +108,248 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:layout_marginLeft="@dimen/_20dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/detail"
+                    android:layout_marginTop="@dimen/_10dp">
+                    <TextView
+                        android:id="@+id/uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name1"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp" />
+                    <EditText
+                        android:id="@+id/tv_uname"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="@dimen/_5dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginLeft="@dimen/_90dp"
+                        android:paddingLeft="@dimen/_22sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/uname"
+                        android:text="@string/compname"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/contactno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_no"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_below="@+id/uname"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/tv_cont_no"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="@dimen/_5dp"
+                        android:background="@color/white"
+                        android:layout_toRightOf="@id/contactno"
+                        android:layout_below="@id/uname"
+                        android:layout_marginLeft="@dimen/_60dp"
+                        android:paddingLeft="@dimen/_20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_contact_no"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                    <RelativeLayout
+                        android:id="@+id/rl_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/contactno"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        >
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/addre"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_addre"
+                            android:background="@color/white"
+                            android:paddingRight="@dimen/_5dp"
+                            android:layout_marginLeft="@dimen/_100dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_toRightOf="@id/address"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_vaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl_address"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        >
+                        <TextView
+                            android:id="@+id/v_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/v_address"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/tv_vil_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_faddre"
+                            android:background="@color/white"
+                            android:paddingRight="@dimen/_5dp"
+                            android:layout_marginLeft="@dimen/_100dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_toRightOf="@id/v_address"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/field"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_below="@+id/rl_vaddress"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/tv_field"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="@dimen/_5dp"
+                        android:layout_toRightOf="@id/field"
+                        android:background="@color/white"
+                        android:layout_below="@id/rl_vaddress"
+                        android:layout_marginLeft="@dimen/_120dp"
+                        android:paddingLeft="@dimen/_5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+                    <RelativeLayout
+                        android:id="@+id/rl_pre_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/field"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        >
+                        <TextView
+                            android:id="@+id/pre_work"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pre_working"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp"  />
+
+                        <EditText
+                            android:id="@+id/tv_pre_work"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="@dimen/_5dp"
+                            android:paddingLeft="@dimen/_3dp"
+                            android:layout_toRightOf="@+id/pre_work"
+                            android:layout_marginLeft="@dimen/_100dp"
+                            android:background="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_demand_sal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_pre_work"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        >
+                        <TextView
+                            android:id="@+id/demand_sal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/demand_sal"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp"  />
+
+                        <EditText
+                            android:id="@+id/tv_demand_sal"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="@dimen/_5dp"
+                            android:layout_marginLeft="@dimen/_80dp"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/_3dp"
+                            android:layout_toRightOf="@+id/demand_sal"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_pwork_shift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_demand_sal"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        >
+                        <TextView
+                            android:id="@+id/work_shift"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/working_shift"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp"  />
+
+                        <EditText
+                            android:id="@+id/tv_work_shift"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="@dimen/_5dp"
+                            android:layout_marginLeft="68dp"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/_5dp"
+                            android:layout_toRightOf="@+id/work_shift"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
             </RelativeLayout>
             <Button
                 android:id="@+id/tv_login"

@@ -103,12 +103,34 @@
     <string name="phone">Phone</string>
     <string name="message">Message</string>
     <string name="send">Send</string>
-    
+
     <!--user Home Page-->
     <string name="all_job">ALL FETURED JOBS</string>
-    <string name="vac1">•  Rolling technician</string>
-    <string name="vac2">•  roll machine operater</string>
-    <string name="day_ago">•  8 Days Ago</string>
-    <string name="day">•  Days</string>
-    <string name="sal">•  20,000 To 35,000</string>
+    <string name="vac1">•   Rolling technician</string>
+    <string name="vac2">•   roll machine operater</string>
+    <string name="day_ago">•   8 Days Ago</string>
+    <string name="day">•   Days</string>
+    <string name="sal">•   20,000 To 35,000</string>
+    <string name="u_msg">•   Know all the information about the rolling stock and know about machine.</string>
+    <string name="request">Request</string>
+
+    <!--User Profile-->
+    <string name="contact_no">Contact No</string>
+    <string name="tv_contact_no">99784 51010</string>
+    <string name="v_address">Village\nAddress</string>
+    <string name="field">Field</string>
+    <string name="pre_working">Previes\nWorking</string>
+    <string name="demand_sal">Demanded\nsalary</string>
+    
+    <!--User All Request-->
+    <string name="typ_of_mach">Type of\nmachinery</string>
+    <string name="vac_loaction">Vacancy\nLocation</string>
+    <string name="tv_type_of_mach">Water jet machinne</string>
+    <string name="tv_cat">Designer</string>
+    <string name="tv_work_shift1">Day</string>
+    <string name="tv_subcat">Sari pattern designer</string>
+    <string name="pending">Pending</string>
+    <string name="accepted">accepted</string>
+    <string name="rejected">rejected</string>
+    <string name="cancel">Cancel</string>
 </resources>
