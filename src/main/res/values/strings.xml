@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">KAMDO</string>
 
+    <string name="noNetworkFound">You\'re not connected to the Internet. Please connect and retry. </string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="dialog_ok">OK</string>
     <!--login-->
     <string name="loginaccount">Sign In</string>
     <string name="signin">Login</string>
