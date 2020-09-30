@@ -96,10 +96,19 @@
 
     <!--Edit Profile-->
     <string name="save">Save</string>
-    
+
     <!--Contact Us-->
     <string name="cont_us">Contact us &amp; Support</string>
     <string name="name1">Name</string>
     <string name="phone">Phone</string>
     <string name="message">Message</string>
+    <string name="send">Send</string>
+    
+    <!--user Home Page-->
+    <string name="all_job">ALL FETURED JOBS</string>
+    <string name="vac1">•  Rolling technician</string>
+    <string name="vac2">•  roll machine operater</string>
+    <string name="day_ago">•  8 Days Ago</string>
+    <string name="day">•  Days</string>
+    <string name="sal">•  20,000 To 35,000</string>
 </resources>

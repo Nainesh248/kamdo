@@ -79,7 +79,7 @@
                 android:layout_marginTop="@dimen/_15dp"
                 android:background="@drawable/round_shape_edittext"
                 android:hint="@string/mobile"
-                android:inputType="number"
+                android:inputType="phone"
                 android:imeOptions="actionNext"
                 android:paddingLeft="@dimen/_20dp"
                 android:paddingRight="@dimen/_20dp"

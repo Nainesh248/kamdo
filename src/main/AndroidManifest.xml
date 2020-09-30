@@ -9,20 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.AboutActivity"
-            android:theme="@style/AppTheme1">
-
-        </activity>
-        <activity android:name=".activity.EditVacancyActivity"
-            android:theme="@style/AppTheme1">
-
-        </activity>
-        <activity android:name=".activity.AddVacancyActivity"
+        <activity android:name=".activity.UserAboutActivity"
             android:theme="@style/AppTheme1">
 
         </activity>
         <activity
-            android:name=".activity.HomeCompanyActivity"
+            android:name=".activity.UserHomeActivity"
             android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,14 +23,40 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.AboutActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity
+            android:name=".activity.EditVacancyActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity
+            android:name=".activity.AddVacancyActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity
+            android:name=".activity.HomeCompanyActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+        <activity
             android:name=".login.SignUpCompany"
-            android:theme="@style/AppTheme1" />
+            android:theme="@style/AppTheme1">
+
+        </activity>
         <activity
             android:name=".login.SignUp"
-            android:theme="@style/AppTheme1" />
+            android:theme="@style/AppTheme1">
+
+        </activity>
         <activity
             android:name=".login.LoginActivity"
-            android:theme="@style/AppTheme1" />
+            android:theme="@style/AppTheme1">
+
+        </activity>
         <activity android:name=".MainActivity" />
     </application>
 
