@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">KAMDO</string>
+
+    <!--login-->
+    <string name="loginaccount">Sign In</string>
+    <string name="signin">Login</string>
+    <string name="mobile">Mobile No</string>
+    <string name="password">Password</string>
+    <string name="forget">Forgot Password?</string>
+
+    <!--signup-->
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="vaddress">Village Address</string>
+    <string name="aadhar">Upload Adharcard Photo</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="already_login">Already have an account? <font color="#F36F21">Login</font></string>
+
+    <!--Sign up Company-->
+    <string name="cname">Company name</string>
+    <string name="gstno">GST No</string>
+    <string name="faddress">Factory address</string>
+    <string name="adddes">Add Discription</string>
+
+    <!--Drawer Menu-->
+    <string name="home">Home</string>
+    <string name="add_Vacancy">Add Vacancy</string>
+    <string name="manage_Vacancy">Manage Vacancy list</string>
+    <string name="all_request">All Request</string>
+    <string name="notification">Notification</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="contact_us">Contact us &amp; Support</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+
+    <!--nav header-->
+    <string name="profilename">Eagel co.orporation</string>
+    <string name="compname">Eagel INC.</string>
+
+    <!--Home Fragment-->
+    <string name="introduction">Introduction</string>
+    <string name="tv_intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi</string>
+    <string name="detail">Detail</string>
+    <string name="comname">Company name</string>
+    <string name="coname">Eagel inc</string>
+    <string name="ctype">Company type</string>
+    <string name="tv_ctype">Trim machine work</string>
+    <string name="gst_no">GST No</string>
+    <string name="tv_gst_no">45FGHRE1250K1Z7</string>
+    <string name="con_no">Contact no</string>
+    <string name="tv_con">9845415410</string>
+    <string name="addre">Address</string>
+    <string name="tv_addre">B.101 Goverdhan complex, near kim baypass road, kim surat Gujarat 394 011</string>
+    <string name="faddre">Factory\naddress</string>
+    <string name="tv_faddre">C.505/512 Anita industry area, near kim baypass road, kim, surat Gujarat 394 011</string>
+
+    <!--Add Job Vacancy-->
+    <string name="categopry">Category</string>
+    <string name="sub_category">Sub category</string>
+    <string name="job_open">Job openings</string>
+    <string name="vac_location">Vacancy Location / address</string>
+    <string name="type_of_mech">Type of Machinery</string>
+    <string name="approx_sal">Approx salary</string>
+    <string name="salary_time">Salary time</string>
+    <string name="working_shift">Working shift</string>
+    <string name="add">ADD</string>
+
+    <!--Manage Vacancy-->
+    <string name="manage_vac_list">Manage Vacancy list</string>
+    <string name="edit">Edit</string>
+    <string name="vac_loca">Vacancy\nLocation</string>
+    <string name="tv_vac_loca">B.101/105 Anita industry area, near kim baypass road, kim, surat Gujarat 394 011</string>
+    <string name="type_mech">Type of\nMachinery</string>
+    <string name="tv_type_mach">Water jack machinne</string>
+    <string name="tv_cate">Designer</string>
+    <string name="tv_sub_cat">Sari pattern designer</string>
+    <string name="tv_app_sal">20,000 To 35,000</string>
+    <string name="tv_sal_time">09:00 AM To 10:00PM</string>
+    <string name="tv_work_shift">09:00 AM To 10:00PM</string>
+
+    <!--Edit Vacancy-->
+    <string name="edit_job_vac">Edit Job Vacancy</string>
+
+    <!--All Request-->
+    <string name="all_requests">All Requests</string>
+    <string name="manish">Manish maheta</string>
+    <string name="tv_year">•  2 - 3 year</string>
+    <string name="tv_city">•  In surat</string>
+    <string name="tv_msg">•  I will have been work at Dhanani ltd for last 2 year and so for salary resone I will transform from there.</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="click">Click to see requeat</string>
+    <string name="tv_noti">Manish meheta will requeat for job post</string>
+
+    <!--Edit Profile-->
+    <string name="save">Save</string>
+    
+    <!--Contact Us-->
+    <string name="cont_us">Contact us &amp; Support</string>
+    <string name="name1">Name</string>
+    <string name="phone">Phone</string>
+    <string name="message">Message</string>
+</resources>

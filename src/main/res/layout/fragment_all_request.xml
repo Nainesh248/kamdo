@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AllRequestFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgray1">
+        <TextView
+            android:id="@+id/all_request"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/all_requests"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_all_request"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_below="@+id/all_request"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

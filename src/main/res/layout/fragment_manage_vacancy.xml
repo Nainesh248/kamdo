@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ManageVacancyFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgray1">
+        <TextView
+            android:id="@+id/manage_vac_list"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/manage_vac_list"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_20dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_vacancy_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_below="@+id/manage_vac_list"
+            />
+    </RelativeLayout>
+</FrameLayout>

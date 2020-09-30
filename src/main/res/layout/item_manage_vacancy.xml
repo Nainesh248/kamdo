@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/lightgray1"
+    android:paddingBottom="@dimen/_20dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:paddingBottom="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:layout_alignParentRight="true"
+            android:textSize="14dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/orange"
+            android:layout_marginRight="@dimen/_20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit"
+            android:layout_marginTop="@dimen/_10dp">
+            <RelativeLayout
+                android:id="@+id/rl_vac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/vac_loaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vac_loca"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_fac_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_vac_loca"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/vac_loaction"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_mach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_vac"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/type_of_mach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type_mech"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_type_of_mach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_type_mach"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/type_of_mach"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_mach"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/catgory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/categopry"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_cate"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/catgory"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_sub_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_cat"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/sub_catgory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_category"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_sub_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_sub_cat"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/sub_catgory"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_job_op"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_sub_cat"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/job_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_open"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_job_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/job_open"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_approx_sal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_job_op"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/approx_sal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/approx_sal"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_approx_sal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_app_sal"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/approx_sal"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_salary_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_approx_sal"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/salary_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salary_time"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_salary_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_sal_time"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/salary_time"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_work_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_salary_time"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                >
+                <TextView
+                    android:id="@+id/work_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/working_shift"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_work_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_work_shift"
+                    android:paddingRight="@dimen/_5dp"
+                    android:layout_marginLeft="@dimen/_30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_toRightOf="@id/work_shift"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
