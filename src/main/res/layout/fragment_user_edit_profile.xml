@@ -122,7 +122,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14dp" />
                     <EditText
-                        android:id="@+id/tv_uname"
+                        android:id="@+id/edt_uname"
                         android:layout_width="wrap_content"
                         android:paddingRight="@dimen/_5dp"
                         android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                         android:textSize="14dp" />
 
                     <EditText
-                        android:id="@+id/tv_cont_no"
+                        android:id="@+id/edt_cont_no"
                         android:layout_width="wrap_content"
                         android:paddingRight="@dimen/_5dp"
                         android:background="@color/white"
@@ -178,7 +178,7 @@
                             android:textSize="14dp" />
 
                         <EditText
-                            android:id="@+id/tv_address"
+                            android:id="@+id/edt_address"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/tv_addre"
@@ -210,7 +210,7 @@
                             android:textSize="14dp" />
 
                         <EditText
-                            android:id="@+id/tv_vil_address"
+                            android:id="@+id/edt_vil_address"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/tv_faddre"
@@ -236,7 +236,7 @@
                         android:textSize="14dp" />
 
                     <EditText
-                        android:id="@+id/tv_field"
+                        android:id="@+id/edt_field"
                         android:layout_width="wrap_content"
                         android:paddingRight="@dimen/_5dp"
                         android:layout_toRightOf="@id/field"
@@ -268,7 +268,7 @@
                             android:textSize="14dp"  />
 
                         <EditText
-                            android:id="@+id/tv_pre_work"
+                            android:id="@+id/edt_pre_work"
                             android:layout_width="wrap_content"
                             android:paddingRight="@dimen/_5dp"
                             android:paddingLeft="@dimen/_3dp"
@@ -301,7 +301,7 @@
                             android:textSize="14dp"  />
 
                         <EditText
-                            android:id="@+id/tv_demand_sal"
+                            android:id="@+id/edt_demand_sal"
                             android:layout_width="wrap_content"
                             android:paddingRight="@dimen/_5dp"
                             android:layout_marginLeft="@dimen/_80dp"
@@ -334,7 +334,7 @@
                             android:textSize="14dp"  />
 
                         <EditText
-                            android:id="@+id/tv_work_shift"
+                            android:id="@+id/edt_work_shift"
                             android:layout_width="wrap_content"
                             android:paddingRight="@dimen/_5dp"
                             android:layout_marginLeft="68dp"
@@ -352,7 +352,7 @@
                 </RelativeLayout>
             </RelativeLayout>
             <Button
-                android:id="@+id/tv_login"
+                android:id="@+id/tv_save"
                 android:layout_width="@dimen/_120dp"
                 android:layout_height="@dimen/_40dp"
                 android:layout_centerHorizontal="true"

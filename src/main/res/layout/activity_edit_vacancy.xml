@@ -186,7 +186,7 @@
                     android:textColorHint="@color/black"
                     android:textSize="13dp" />
                 <Button
-                    android:id="@+id/btn_add"
+                    android:id="@+id/btn_edit"
                     android:layout_width="@dimen/_180dp"
                     android:layout_height="@dimen/_40dp"
                     android:layout_gravity="center"
