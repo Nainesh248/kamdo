@@ -123,7 +123,7 @@
                         android:textSize="14dp" />
 
                     <EditText
-                        android:id="@+id/tv_cname"
+                        android:id="@+id/edt_cname"
                         android:layout_width="wrap_content"
                         android:paddingRight="@dimen/_5dp"
                         android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
                         android:textSize="14dp" />
 
                     <EditText
-                        android:id="@+id/tv_ctype"
+                        android:id="@+id/edt_ctype"
                         android:layout_width="wrap_content"
                         android:paddingRight="@dimen/_5dp"
                         android:layout_toRightOf="@id/ctype"
@@ -174,7 +174,7 @@
                         android:textSize="14dp" />
 
                     <EditText
-                        android:id="@+id/tv_gstno"
+                        android:id="@+id/edt_gstno"
                         android:layout_width="wrap_content"
                         android:layout_toRightOf="@id/gstno"
                         android:layout_below="@id/ctype"
@@ -206,7 +206,7 @@
                             android:textSize="14dp" />
 
                         <EditText
-                            android:id="@+id/tv_address"
+                            android:id="@+id/edt_address"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/tv_addre"
@@ -221,6 +221,7 @@
                             android:textSize="14dp" />
                     </RelativeLayout>
                     <RelativeLayout
+                        android:id="@+id/rl_faddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/rl_gst"
@@ -237,7 +238,7 @@
                             android:textSize="14dp" />
 
                         <EditText
-                            android:id="@+id/tv_fac_address"
+                            android:id="@+id/edt_fac_address"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/tv_faddre"
@@ -251,10 +252,48 @@
                             android:textColor="#000"
                             android:textSize="14dp" />
                     </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_faddress"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:layout_marginLeft="@dimen/_20dp">
+                        <ImageView
+                            android:id="@+id/iv_add_address"
+                            android:layout_width="@dimen/_20dp"
+                            android:layout_height="@dimen/_20dp"
+                            android:src="@drawable/add_address"/>
+                        <ImageView
+                            android:id="@+id/iv_remove_address"
+                            android:layout_width="@dimen/_20dp"
+                            android:visibility="gone"
+                            android:layout_height="@dimen/_20dp"
+                            android:src="@drawable/remove_address"/>
+                        <TextView
+                            android:id="@+id/tv_add_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Address"
+                            android:background="@color/white"
+                            android:layout_marginLeft="@dimen/_150dp"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp" />
+                        <EditText
+                            android:id="@+id/edt_add_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter New Address"
+                            android:visibility="gone"
+                            android:textColorHint="@color/black"
+                            android:layout_marginLeft="@dimen/_150dp"
+                            android:background="@color/white"
+                            android:textColor="@color/gray"
+                            android:textSize="14dp" />
+                        </RelativeLayout>
                 </RelativeLayout>
             </RelativeLayout>
             <Button
-                android:id="@+id/tv_login"
+                android:id="@+id/tv_save"
                 android:layout_width="@dimen/_120dp"
                 android:layout_height="@dimen/_40dp"
                 android:layout_centerHorizontal="true"

@@ -5,6 +5,12 @@
     <string name="dialog_yes">YES</string>
     <string name="dialog_no">NO</string>
     <string name="dialog_ok">OK</string>
+
+    <string name="msg_NO_INTERNET_RESPOND">Please connect your internet connection</string>
+    <string name="msg_please_wait">Please wait …</string>
+    <string name="msg_server_error">Something went wrong please try again</string>
+    <string name="msg_press_back_twice">Double tab to back</string>
+    <string name="hi">Hi</string>
     <!--login-->
     <string name="loginaccount">Sign In</string>
     <string name="signin">Login</string>
@@ -137,4 +143,5 @@
     <string name="accepted">accepted</string>
     <string name="rejected">rejected</string>
     <string name="cancel">Cancel</string>
+    <string name="btnRemove">Remove</string>
 </resources>

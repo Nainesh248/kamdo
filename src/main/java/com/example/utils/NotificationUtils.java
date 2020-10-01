@@ -23,8 +23,8 @@ import android.util.Patterns;
 
 import androidx.core.app.NotificationCompat;
 
-import com.indiaudyogmart.R;
-import com.indiaudyogmart.config.Constants;
+import com.example.R;
+import com.example.config.Constants;
 
 import java.io.IOException;
 import java.io.InputStream;

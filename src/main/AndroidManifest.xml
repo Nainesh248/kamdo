@@ -11,16 +11,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.UserAboutActivity"
             android:theme="@style/AppTheme1">
-
         </activity>
         <activity
             android:name=".activity.UserHomeActivity"
             android:theme="@style/AppTheme1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.AboutActivity"
@@ -40,7 +35,11 @@
         <activity
             android:name=".activity.HomeCompanyActivity"
             android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".login.SignUpCompany"

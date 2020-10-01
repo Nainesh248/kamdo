@@ -42,10 +42,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
+import com.example.R;
+import com.example.model.LoginResponse;
+import com.example.reciver.ConnectivityReceiver;
 import com.google.gson.Gson;
-import com.indiaudyogmart.R;
-import com.indiaudyogmart.model.LoginResponse;
-import com.indiaudyogmart.reciver.ConnectivityReceiver;
 import com.nispok.snackbar.Snackbar;
 
 import org.json.JSONObject;
@@ -64,10 +64,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static android.content.Context.WIFI_SERVICE;
-import static com.indiaudyogmart.config.Constants.BITMAP_SCALE;
 
 
 public class CommonFunctions {
+    private static final float BITMAP_SCALE = 0.4f;
     public static String errMessage = "";
     static String tag = "CommonFunctions :";
     static Toast toast;

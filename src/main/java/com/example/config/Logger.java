@@ -17,15 +17,15 @@ public final class Logger {
     static String state = Environment.getExternalStorageState();
 
     public static void debugE(String className, String message) {
-        Log.e(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", className + " : " + message);
-        addRecordToLog(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + className + " : " + message);
+        Log.e(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", className + " : " + message);
+        addRecordToLog(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + className + " : " + message);
 
 
     }
 
     public static void debugE(String message) {
-        Log.e(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", message);
-        addRecordToLog(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + " : " + message);
+        Log.e(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", message);
+        addRecordToLog(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + " : " + message);
     }
 
     public static void debugE(String message, boolean execption) {
@@ -34,18 +34,18 @@ public final class Logger {
         String methodName = Thread.currentThread().getStackTrace()[2].getMethodName();
         int lineNumber = Thread.currentThread().getStackTrace()[2].getLineNumber();
         String errormessage = className + "." + methodName + "():-->" + lineNumber + "--->" + message;
-        Log.e(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", errormessage);
-        addRecordToLog(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + errormessage);
+        Log.e(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", errormessage);
+        addRecordToLog(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + errormessage);
     }
 
     public static void debugV(String message) {
-        Log.v(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", message);
-        addRecordToLog(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + message);
+        Log.v(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", message);
+        addRecordToLog(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + message);
     }
 
     public static void debugV(String className, String message) {
-        Log.v(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", className + ":" + message);
-        addRecordToLog(IndiaMartConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + className + ":" + message);
+        Log.v(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  ", className + ":" + message);
+        addRecordToLog(KamdoConfig.APP_VERSION + " " + System.currentTimeMillis() + " :  " + className + ":" + message);
     }
 
     public static void addRecordToLog(String message) {
