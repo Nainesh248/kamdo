@@ -2,6 +2,8 @@ package com.example.fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -9,35 +11,23 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.R;
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link UserAllRequestFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class UserAllRequestFragment extends Fragment {
 
 
-    public UserAllRequestFragment() {
-        // Required empty public constructor
+    View rootView;
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        rootView = inflater.inflate(R.layout.fragment_user_all_request, container, false);
+        init();
+        return rootView;
+
     }
 
-    public static UserAllRequestFragment newInstance(String param1, String param2) {
-        UserAllRequestFragment fragment = new UserAllRequestFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
-    }
+    private void init() {
+        try {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_all_request, container, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
