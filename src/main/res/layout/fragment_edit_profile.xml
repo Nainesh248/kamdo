@@ -27,7 +27,7 @@
                     android:layout_height="@dimen/_80dp"
                     android:layout_marginBottom="@dimen/_20dp"
                     android:background="@drawable/circle_black"
-                    android:src="@drawable/no_image" />
+                    android:src="@drawable/company_profile" />
                 <TextView
                     android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
