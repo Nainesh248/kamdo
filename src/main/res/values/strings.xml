@@ -11,6 +11,9 @@
     <string name="msg_server_error">Something went wrong please try again</string>
     <string name="msg_press_back_twice">Double tab to back</string>
     <string name="hi">Hi</string>
+
+    <string name="err_email_mobil">Please enter your mobile number</string>
+    <string name="err_pwd">Please enter your password</string>
     <!--login-->
     <string name="loginaccount">Sign In</string>
     <string name="signin">Login</string>

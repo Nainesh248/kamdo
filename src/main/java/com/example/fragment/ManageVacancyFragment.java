@@ -27,6 +27,7 @@ public class ManageVacancyFragment extends Fragment {
     private void init() {
         try {
 
+
         } catch (Exception e) {
             e.printStackTrace();
         }

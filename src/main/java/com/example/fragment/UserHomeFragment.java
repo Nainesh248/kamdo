@@ -12,11 +12,6 @@ import android.view.ViewGroup;
 
 import com.example.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link UserHomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class UserHomeFragment extends Fragment {
 
 
