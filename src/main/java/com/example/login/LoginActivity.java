@@ -19,6 +19,7 @@ import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.example.R;
 import com.example.activity.HomeCompanyActivity;
+import com.example.activity.UserHomeActivity;
 import com.example.config.CommonFunctions;
 import com.example.config.Constants;
 import com.example.config.KamdoConfig;
@@ -127,7 +128,7 @@ public class LoginActivity extends AppCompatActivity {
                                     if (loginResponse.) {
                                         CommonFunctions.setPreference(LoginActivity.this, Constants.isLogin, true);
                                         CommonFunctions.setPreference(getApplicationContext(), Constants.userdata, gson.toJson(loginResponse));
-                                        CommonFunctions.changeactivity(LoginActivity.this, HomeCompanyActivity.class);
+                                        CommonFunctions.changeactivity(LoginActivity.this, UserHomeActivity.class);
                                     } else {
                                         Toast.makeText(LoginActivity.this, loginResponse.message, Toast.LENGTH_LONG).show();
                                     }
