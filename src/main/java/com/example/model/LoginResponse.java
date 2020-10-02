@@ -12,7 +12,9 @@ public class LoginResponse {
     @Expose
     @SerializedName("data")
     public DataEntity data;
-
+    @Expose
+    @SerializedName("status")
+    public boolean status;
 
     public static class DataEntity {
         @Expose

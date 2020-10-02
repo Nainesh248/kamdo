@@ -14,6 +14,13 @@
 
     <string name="err_email_mobil">Please enter your mobile number</string>
     <string name="err_pwd">Please enter your password</string>
+    <string name="err_cpwd">Please enter your confirm password</string>
+    <string name="err_cpwd1"> Please enter confirm password between 6 to 20 characters !</string>
+    <string name="err_name">Please enter your name</string>
+    <string name="err_mobil">Please enter your phone number</string>
+    <string name="err_pwd1"> Please enter password between 6 to 20 characters !</string>
+    <string name="err_address">Please enter address</string>
+    <string name="err_vaddress">Please enter Village address</string>
     <!--login-->
     <string name="loginaccount">Sign In</string>
     <string name="signin">Login</string>
@@ -147,4 +154,5 @@
     <string name="rejected">rejected</string>
     <string name="cancel">Cancel</string>
     <string name="btnRemove">Remove</string>
+
 </resources>

@@ -18,7 +18,6 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.example.R;
-import com.example.activity.HomeCompanyActivity;
 import com.example.activity.UserHomeActivity;
 import com.example.config.CommonFunctions;
 import com.example.config.Constants;
@@ -33,6 +32,7 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -58,11 +58,14 @@ public class LoginActivity extends AppCompatActivity {
     Button btnLogin;
     @BindView(R.id.ll_contain)
     LinearLayout llContain;
+    @BindView(R.id.iv_logo)
+    ImageView ivLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        ButterKnife.bind(this);
         init();
 
     }
@@ -84,10 +87,8 @@ public class LoginActivity extends AppCompatActivity {
     private void loginClick() {
         try {
             if (etMobileno.getText().toString().trim().length() == 0) {
-
                 Toast.makeText(this, getString(R.string.err_email_mobil), Toast.LENGTH_SHORT).show();
             } else if (etPassword.getText().toString().trim().length() == 0) {
-
                 Toast.makeText(this, getString(R.string.err_pwd), Toast.LENGTH_SHORT).show();
             } else {
                 loginUser(false);
@@ -102,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
             if (CommonFunctions.checkConnection(this)) {
                 String url = KamdoConfig.WEBURL + KamdoConfig.login;
                 Map<String, String> mParams = new HashMap<>();
-                mParams.put(Constants.username, etMobileno.getText().toString().trim());
+                mParams.put(Constants.mobile_no, etMobileno.getText().toString().trim());
                 mParams.put(Constants.password, etPassword.getText().toString().trim());
                 mParams.put(Constants.device_id, CommonFunctions.getDeviceUID(this));
                 mParams.put(Constants.device_token, CommonFunctions.getPreference(this, Constants.device_token, "nofound"));
@@ -125,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Log.e("res", response.toString());
                                     Gson gson = new Gson();
                                     LoginResponse loginResponse = gson.fromJson(response.toString(), LoginResponse.class);
-                                    if (loginResponse.) {
+                                    if (loginResponse.status ) {
                                         CommonFunctions.setPreference(LoginActivity.this, Constants.isLogin, true);
                                         CommonFunctions.setPreference(getApplicationContext(), Constants.userdata, gson.toJson(loginResponse));
                                         CommonFunctions.changeactivity(LoginActivity.this, UserHomeActivity.class);
@@ -138,7 +139,7 @@ public class LoginActivity extends AppCompatActivity {
                             }
 
                             @Override
-                            public void onError(ANError error) {
+                            public void onError(ANError anError) {
                                 try {
                                     CommonFunctions.destroyProgressBar();
                                     Toast.makeText(LoginActivity.this, R.string.msg_server_error, Toast.LENGTH_SHORT).show();
@@ -147,7 +148,6 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                             }
                         });
-
             }
         } catch (Exception e) {
             e.printStackTrace();
