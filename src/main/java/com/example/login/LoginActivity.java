@@ -18,6 +18,7 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.example.R;
+import com.example.activity.HomeCompanyActivity;
 import com.example.activity.UserHomeActivity;
 import com.example.config.CommonFunctions;
 import com.example.config.Constants;
@@ -103,15 +104,15 @@ public class LoginActivity extends AppCompatActivity {
             if (CommonFunctions.checkConnection(this)) {
                 String url = KamdoConfig.WEBURL + KamdoConfig.login;
                 Map<String, String> mParams = new HashMap<>();
-                mParams.put(Constants.mobile_no, etMobileno.getText().toString().trim());
+                mParams.put(Constants.phone, etMobileno.getText().toString().trim());
                 mParams.put(Constants.password, etPassword.getText().toString().trim());
                 mParams.put(Constants.device_id, CommonFunctions.getDeviceUID(this));
                 mParams.put(Constants.device_token, CommonFunctions.getPreference(this, Constants.device_token, "nofound"));
-                mParams.put(Constants.device_type, Constants.android);
+                mParams.put(Constants.type, Constants.android);
+                mParams.put(Constants.device_info,CommonFunctions.getDeviceInfo(this));
                 mParams.put(Constants.device_name, CommonFunctions.getDeviceMenufacture());
                 Log.e("url", url);
                 Log.e("mParams", mParams.toString());
-
                 CommonFunctions.createProgressBar(this, getString(R.string.msg_please_wait));
                 AndroidNetworking.post(url)
                         .addBodyParameter(mParams)
@@ -129,7 +130,8 @@ public class LoginActivity extends AppCompatActivity {
                                     if (loginResponse.status ) {
                                         CommonFunctions.setPreference(LoginActivity.this, Constants.isLogin, true);
                                         CommonFunctions.setPreference(getApplicationContext(), Constants.userdata, gson.toJson(loginResponse));
-                                        CommonFunctions.changeactivity(LoginActivity.this, UserHomeActivity.class);
+                                        Toast.makeText(LoginActivity.this, loginResponse.message, Toast.LENGTH_LONG).show();
+                                        CommonFunctions.changeactivity(LoginActivity.this, HomeCompanyActivity.class);
                                     } else {
                                         Toast.makeText(LoginActivity.this, loginResponse.message, Toast.LENGTH_LONG).show();
                                     }

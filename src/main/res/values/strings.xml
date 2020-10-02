@@ -17,10 +17,13 @@
     <string name="err_cpwd">Please enter your confirm password</string>
     <string name="err_cpwd1"> Please enter confirm password between 6 to 20 characters !</string>
     <string name="err_name">Please enter your name</string>
+    <string name="err_gstno">Please enter your GST no</string>
+    <string name="err_cname">Please enter your  Company name</string>
     <string name="err_mobil">Please enter your phone number</string>
     <string name="err_pwd1"> Please enter password between 6 to 20 characters !</string>
     <string name="err_address">Please enter address</string>
     <string name="err_vaddress">Please enter Village address</string>
+    <string name="err_faddress">Please enter Factory address</string>
     <!--login-->
     <string name="loginaccount">Sign In</string>
     <string name="signin">Login</string>
@@ -154,5 +157,14 @@
     <string name="rejected">rejected</string>
     <string name="cancel">Cancel</string>
     <string name="btnRemove">Remove</string>
+    <string name="err_addcat">Please enter Category</string>
+    <string name="err_subcat">Please enter sub category</string>
+    <string name="err_job_open">Please enter job opening</string>
+    <string name="err_vac_loc">Please enter vacancy location</string>
+    <string name="err_typ_mach">Please enter type of machinary</string>
+    <string name="err_aprox_sal">Please enter approx salary</string>
+    <string name="err_salary">Please enter salary time</string>
+    <string name="err_work_shift">Please enter working shift</string>
+    <string name="err_des">Please Enter Description</string>
 
 </resources>

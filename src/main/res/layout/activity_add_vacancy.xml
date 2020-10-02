@@ -65,7 +65,7 @@
                     android:textSize="@dimen/_20dp"
                     android:textStyle="normal"/>
 
-                <EditText
+                <Spinner
                     android:id="@+id/edt_category"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45dp"
@@ -80,7 +80,7 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     android:textSize="13dp" />
-                <EditText
+                <Spinner
                     android:id="@+id/edt_sub_cat"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45dp"
@@ -88,7 +88,7 @@
                     android:layout_marginTop="@dimen/_15dp"
                     android:background="@drawable/round_shape_edittext"
                     android:hint="@string/sub_category"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:imeOptions="actionNext"
                     android:paddingLeft="@dimen/_20dp"
                     android:paddingRight="@dimen/_20dp"
@@ -125,7 +125,7 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     android:textSize="13dp" />
-                <EditText
+                <Spinner
                     android:id="@+id/edt_type_mach"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_45dp"
@@ -148,7 +148,7 @@
                     android:layout_marginTop="@dimen/_15dp"
                     android:background="@drawable/round_shape_edittext"
                     android:hint="@string/approx_sal"
-                    android:inputType="textPassword"
+                    android:inputType="text"
                     android:imeOptions="actionNext"
                     android:paddingLeft="@dimen/_20dp"
                     android:paddingRight="@dimen/_20dp"
@@ -163,7 +163,7 @@
                     android:layout_marginTop="@dimen/_15dp"
                     android:background="@drawable/round_shape_edittext"
                     android:hint="@string/salary_time"
-                    android:inputType="textPassword"
+                    android:inputType="text"
                     android:imeOptions="actionNext"
                     android:paddingLeft="@dimen/_20dp"
                     android:paddingRight="@dimen/_20dp"
@@ -178,7 +178,7 @@
                     android:layout_marginTop="@dimen/_15dp"
                     android:background="@drawable/round_shape_edittext"
                     android:hint="@string/working_shift"
-                    android:inputType="textPassword"
+                    android:inputType="text"
                     android:imeOptions="actionNext"
                     android:paddingLeft="@dimen/_20dp"
                     android:paddingRight="@dimen/_20dp"

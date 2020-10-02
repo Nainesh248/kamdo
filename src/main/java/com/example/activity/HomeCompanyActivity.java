@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.R;
+import com.example.config.CommonFunctions;
 import com.example.fragment.AllRequestFragment;
 import com.example.fragment.ContactUsFragment;
 import com.example.fragment.EditProfileFragment;
@@ -44,6 +46,9 @@ public class HomeCompanyActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     @BindView(R.id.drawer)
     RelativeLayout drawer;
+    ImageView iv_image;
+    TextView tv_name;
+    TextView tv_compname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +61,14 @@ public class HomeCompanyActivity extends AppCompatActivity {
         try {
             ButterKnife.bind(this);
             setupDrawerContent(navView);
+            iv_image = navView.getHeaderView(0).findViewById(R.id.iv_image);
+            tv_name = navView.getHeaderView(0).findViewById(R.id.tv_name);
+            tv_compname = navView.getHeaderView(0).findViewById(R.id.tv_companyname);
+           /* if (getIntent().getExtras() != null && getIntent().getExtras().containsKey(Constants.))
+                tv_name = getIntent().getExtras().getString(Constants.name);
+
+            if (getIntent().getExtras() != null && getIntent().getExtras().containsKey(Constants.email))
+                tv_compname = getIntent().getExtras().getString(Constants.name);*/
             loadFragment(new HomeFragment());
             ivMenu.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -111,6 +124,7 @@ public class HomeCompanyActivity extends AppCompatActivity {
                 startActivity(about);
                 break;
             case R.id.nav_logout:
+                CommonFunctions.changeactivity(HomeCompanyActivity.this, LoginActivity.class);
                 break;
             default:
                 fragmentClass = HomeFragment.class;
