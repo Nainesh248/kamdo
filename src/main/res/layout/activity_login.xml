@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/iv_logo"
         android:layout_marginTop="@dimen/_40dp">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -139,6 +139,34 @@
                 android:textSize="@dimen/_15dp" />
 
         </LinearLayout>
-        </LinearLayout>
+        <Button
+            android:id="@+id/btn_comp"
+            android:layout_width="@dimen/_120dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_below="@id/ll_contain"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@drawable/button_background"
+            android:text="Company Signup"
+            android:layout_marginLeft="@dimen/_50dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10dp" />
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="@dimen/_120dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_contain"
+            android:layout_marginRight="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@drawable/button_background"
+            android:text="User Signup"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10dp" />
+        </RelativeLayout>
+
     </androidx.core.widget.NestedScrollView>>
 </RelativeLayout>

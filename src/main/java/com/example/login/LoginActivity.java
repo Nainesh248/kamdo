@@ -1,5 +1,6 @@
 package com.example.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,7 +34,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -61,12 +61,15 @@ public class LoginActivity extends AppCompatActivity {
     LinearLayout llContain;
     @BindView(R.id.iv_logo)
     ImageView ivLogo;
+    @BindView(R.id.btn_comp)
+    Button btnComp;
+    @BindView(R.id.btn_user)
+    Button btnUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
         init();
 
     }
@@ -74,6 +77,20 @@ public class LoginActivity extends AppCompatActivity {
     private void init() {
         try {
             ButterKnife.bind(this);
+            btnComp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent comp=new Intent(LoginActivity.this,SignUpCompany.class);
+                    startActivity(comp);
+                }
+            });
+            btnUser.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent user=new Intent(LoginActivity.this, SignUp.class);
+                    startActivity(user);
+                }
+            });
             btnLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -109,7 +126,7 @@ public class LoginActivity extends AppCompatActivity {
                 mParams.put(Constants.device_id, CommonFunctions.getDeviceUID(this));
                 mParams.put(Constants.device_token, CommonFunctions.getPreference(this, Constants.device_token, "nofound"));
                 mParams.put(Constants.type, Constants.android);
-                mParams.put(Constants.device_info,CommonFunctions.getDeviceInfo(this));
+                mParams.put(Constants.device_info, CommonFunctions.getDeviceInfo(this));
                 mParams.put(Constants.device_name, CommonFunctions.getDeviceMenufacture());
                 Log.e("url", url);
                 Log.e("mParams", mParams.toString());
@@ -127,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Log.e("res", response.toString());
                                     Gson gson = new Gson();
                                     LoginResponse loginResponse = gson.fromJson(response.toString(), LoginResponse.class);
-                                    if (loginResponse.status ) {
+                                    if (loginResponse.status) {
                                         CommonFunctions.setPreference(LoginActivity.this, Constants.isLogin, true);
                                         CommonFunctions.setPreference(getApplicationContext(), Constants.userdata, gson.toJson(loginResponse));
                                         Toast.makeText(LoginActivity.this, loginResponse.message, Toast.LENGTH_LONG).show();

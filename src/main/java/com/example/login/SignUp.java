@@ -173,6 +173,7 @@ public class SignUp extends AppCompatActivity {
                 mParams.put(Constants.address_2, edtVillageAddress.getText().toString().trim());
                 mParams.put(Constants.password, edtPassword.getText().toString().trim());
                 mParams.put(Constants.confirmPassword, edtConpassword.getText().toString().trim());
+                mParams.put(Constants.type, Constants.android);
                 Log.e("url", url);
                 Log.e("mParams", mParams.toString());
                 CommonFunctions.createProgressBar(SignUp.this, getString(R.string.msg_please_wait));
